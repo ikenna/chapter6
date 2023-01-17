@@ -13,7 +13,6 @@ public class EndToEndSchemaTest {
     @Test
     public void testGetProductEndToEnd() {
         given()
-                .header("Host", "api.acme-pet-supplies.com")
                 .header("X-API-Key", "my_secret_api_key")
                 .filter(validationFilter)
                 .when()
